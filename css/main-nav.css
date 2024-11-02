@@ -1,0 +1,147 @@
+.main-nav-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    gap: 14px;
+}
+
+.game{
+    background-color: var(--transparent);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.game p{
+    width: 60%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.controller-container{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controller-container img{
+    width: 25px;
+    height: 25px;
+}
+
+.arrow-container{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-container img{
+    width: 25px;
+    height: 25px;
+}
+
+.search{
+    background-color: var(--transparent);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.glass-container{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glass-container img{
+    width: 25px;
+    height: 25px;
+}
+
+.search p{
+    width: 80%;
+    color: var(--white);
+}
+
+.price{
+    width: 12.5%;
+
+}
+
+.item-type{
+    height: 12.5%;
+
+}
+
+.price-item-type-container{
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-item-type-sorting{
+    height: 50px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--transparent);
+    border-left: 1px solid var(--border-color);
+}
+
+.price-item-type-sorting img{
+    width: 25px;
+    height: 25px;
+}
+
+.price-item-type-sorting .img-container{
+    width: 25%;
+}
+
+.price-item-type-sorting p{
+    color: var(--white);
+    font-size: 14px;
+    margin: 0;
+}
+
+.price-item-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+
+
+@media (width > 500px){
+    .main-nav-container{
+        flex-direction: row;
+    }
+
+    .game{
+        width: 20%;
+    }
+    .search{
+        width: 45%;
+    }
+    .price-item-type-container{
+        width: 30%;
+    }
+};

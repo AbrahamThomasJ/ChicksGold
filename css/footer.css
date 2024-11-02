@@ -1,0 +1,282 @@
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment{
+    width: 100%;
+    background-color: var(--gray-cards-section);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.methods-container{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment{
+    height: 140px;
+}
+
+.payment img{
+    width: 50px;
+}
+
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.payment ul li a{
+    width: 25px;
+    height: 25px;
+
+
+}
+
+.credit-methods{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.cripto-methods{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    
+}
+
+.cripto-methods a img{
+    width: 20px;
+}
+
+.methods-container >  a{
+    width: 100%;
+    color: var(--gray-sort-by-letter);
+}
+
+.social-media-area{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1200px;
+
+}
+
+
+.social-media-area img{
+    width: 30px;
+}
+
+
+.information-area{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logue img{
+    width: 236px;
+}
+
+.support{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support a{
+    color: var(--gray-sort-by-letter);
+}
+
+.footer-menu{
+
+    width: 100%;
+}
+
+.footer-menu li{
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-menu img{
+    width: 25px;
+    height: 25px;
+}
+
+.footer-menu a{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.review-container p{
+    color: var(--gray-sort-by-letter);
+
+}
+
+.stars-container img{
+    width: 25px;
+}
+
+.rights{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rights p{
+    color: var(--gray-sort-by-letter);
+    font-size: 10px;
+}
+
+.support-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-menu .dropdown-content{
+    display: none;
+}
+
+@media (width > 500px){
+    .methods-container{
+        flex-direction: row;
+    }
+    .payment img{
+        width: 86px;
+    }
+    .cripto-methods{
+        width: 22%;
+    }
+
+    .credit-methods{
+        width: 84%;
+    }
+
+    .social-media-area{
+        width: 90%;
+        justify-content: start;
+    }
+
+    .social-media-area a{
+        padding-right: 6px;
+    }
+
+    .footer-logue img{
+        width: 200px;
+    }
+
+    .menu-item a{
+        font-size: 14px;
+    }
+
+    
+}
+
+@media (width > 1100px){
+
+    .toggle-button{
+        display: none;
+    }
+    .information-area{
+        border-top: 1px solid var(--border-color);
+        padding: 40px 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .support-container{
+        width: 20%;
+    }
+
+    .support{
+        justify-items: start;
+    }
+
+    .footer-menu{
+        width: 50%;
+    }
+
+    .footer-menu ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-menu li{
+        border: none;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .footer-menu .dropdown-button{
+        display: none;
+
+    }
+    .footer-menu .dropdown-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .review-container{
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-menu .dropdown-content a{
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+}

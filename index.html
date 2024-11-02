@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicks Gold Landing</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main-nav.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="./js/item.js" defer></script>
+    <script src="./js/itemRenderer.js" defer></script>
+    <script src="./js/pagination.js" defer></script> 
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <nav class="navbar">
+    <div class="dropdown-menu">
+
+      <button class="toggle-button">
+        <img src="./src/icons/toggle-menu.svg" alt="">
+      </button>
+
+    </div>
+
+
+    <div class="nav-container-one">
+      <div class="company-logue-container">
+        <a class="company-logue">
+          <img class="logue" src="./src/img/chicks-logo-large.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+
+    <div class="nav-container-two">
+      <ul class="sections-container">
+        <li class="sections">
+          <a href="">
+            <p>Currency</p>
+          </a>
+          
+          <img src="./src/icons/arrow-dropdown.svg" alt="">
+          
+        </li>
+        <li class="sections">
+          <a href="">
+            <p>items</p>
+          </a>
+          
+          <img src="./src/icons/arrow-dropdown.svg" alt="">
+          
+        </li>
+        <li class="sections">
+          <a href="">
+            <p>Accounts</p>
+          </a>
+          
+          <img src="./src/icons/arrow-dropdown.svg" alt="">
+          
+        </li>
+        <li class="sections">
+          <a href="">
+            <p>Services</p>
+          </a>
+          
+          <img src="./src/icons/arrow-dropdown.svg" alt="">
+          
+        </li>
+        <li class="sections">
+          <a href="">
+            <p>More</p>
+          </a>
+          
+          <img src="./src/icons/arrow-dropdown.svg" alt="">
+          
+        </li>
+        <li class="sections">
+          <a href="">
+            <p>Sell</p>
+          </a>
+          
+          <img src="./src/icons/arrow-dropdown.svg" alt="">
+          
+        </li>
+      </ul>
+    </div>
+
+    
+    <div class="nav-container-three">
+      <div class="currency-dropdown">
+      
+        <a class="currency">USD</a>
+        
+        <img src="./src/icons/arrow-dropdown.svg" alt="">
+      </div>
+  
+      <div class="cart-container">
+        <img src="./src/icons/cart.svg" alt="">
+        Cart
+        <p class="quantity-items">(5)</p>
+      </div>
+    
+      <div class="sign-in-container">
+        <a>
+          <p>SIGN IN</p>
+          <img src="./src/icons/user.svg" alt="">
+          
+        </a>
+      </div>
+
+    </div>
+  
+  
+  
+  </nav>
+
+</header>
+
+
+
+<main class="main">
+  <div class="main-container">
+
+    <div class="h1-container">
+      <h1>
+        Condimentum consectetur
+      </h1>
+    </div>
+    
+    <div class="main-nav-container">
+      <div class="game">
+        <div class="controller-container">
+          <img src="./src/icons/sword.svg" alt="game-controller">
+        </div>
+        <p>Select a game</p>
+
+        <div class="arrow-container">
+          <img src="./src/icons/arrow-dropdown.svg" alt="">
+        </div>
+     
+      </div>
+      <div class="search">
+        <div class="glass-container">
+          <img src="./src/icons/glass.svg" alt="">
+        </div>
+        <p>
+          Search
+        </p>
+      </div>
+
+      <div class="price-item-type-container">
+        <div class="price-item-type-sorting">
+          <div class="img-container">
+            <img src="./src/icons/coin-bag.svg" alt="">
+          </div>
+
+          <div class="price-item-p">
+            <p>Price</p>
+            <p class="all">All</p>
+          </div>
+
+          <div class="img-container">
+            <img src="./src/icons/arrow-dropdown.svg" alt="">
+          </div>
+
+        </div>
+
+        <div class="price-item-type-sorting">
+          <div class="img-container">
+            <img src="./src/icons/plum.svg" alt="">
+          </div>
+
+          <div class="price-item-p">
+            <p>Item Type</p>
+            <p class="all">All</p>
+          </div>
+
+          <div class="img-container">
+            <img src="./src/icons/arrow-dropdown.svg" alt="">
+          </div>
+
+        </div>
+
+
+      </div>
+
+      
+
+
+
+    </div>
+    
+    <div class="items-pagination-sorting-section">
+        
+        <div class="sorted-by-container">
+            <div class="items-availables-page">
+                <p>Showing 20 - from 125</p>
+            </div>
+
+            <div class="sorted-by">
+                <div class="sort-container">
+                  <img src="./src/icons/filter.svg" alt="">
+                </div>
+            
+                <div class="featured-container">
+                   <p><span>Sort By</span><br>Featured</p>
+                </div>
+            
+                <div class="arrow-container">
+                  <div class="arrow">▼</div>
+                </div>
+            
+                
+              </div>
+        </div>
+
+
+        <div  class="items-container" id="items-container"></div>
+        <div class="pagination-container">
+            
+            <button id="prev" class="pagination-button arrow-button">&lt;</button>
+            <div class="pagination-buttons" id="paginationButtons"></div>
+            <button id="next" class="pagination-button arrow-button">&gt;</button>
+        
+        </div>
+        
+    </div>    
+
+  </div>
+
+   
+</main>
+
+<footer>
+  <div class="footer-container">
+
+    <div class="payment">
+      <div class="methods-container">
+        <ul class="credit-methods">
+          <li><a href=""><img src="./src/img/visa-logo.svg" alt=""></a></li>
+          <li><a href=""><img src="./src/img/masterdcard-logo.svg" alt=""></a></li>
+          <li><a href=""><img src="./src/img/american-express-logue.png" alt=""></a></li>
+          <li><a href=""><img src="./src/img/skrill-logue.png" alt=""></a></li>
+        </ul>
+        <ul class="cripto-methods">
+          <a href=""><img src="./src/img/green-bitcoin.svg" alt=""></a>
+          <a href=""><img src="./src/img/etherium.svg" alt=""></a>
+          <a href=""><img src="./src/img/orange-bitcoin.svg" alt=""></a>
+          <a href=""><img src="./src/img/litecoin.svg" alt=""></a>
+        </ul>
+        <a href="">and 50+ more</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="social-media-area">
+      <a href="">
+        <img src="./src/icons/discord-logo.svg" alt="">
+      </a>
+      <a href="">
+        <img src="./src/icons/instagram-logo.svg" alt="">
+      </a>
+      <a href="">
+        <img src="./src/icons/x-logo.svg" alt="">
+      </a>
+      <a href="">
+        <img src="./src/icons/facebook-logo.svg" alt="">
+      </a>
+    </div>
+
+
+    <div class="information-area">
+      <div class="support-container">
+        <div class="footer-logue">
+          <img src="./src/img/chicks-logo-large.svg" alt="">
+        </div>
+        <div class="support">
+          <a href="">support@chicksgold.com</a>
+        </div>
+
+      </div>
+
+  
+      <div class="footer-menu">
+        <ul>
+            <li class="menu-item">
+                <a href="#">Chicks Gold</a>
+                <button class="dropdown-button">
+                    <img src="./src/icons/arrow-dropdown.svg" alt="Dropdown arrow">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                </div>
+            </li>
+            <li class="menu-item">
+                <a href="#">Support</a>
+                <button class="dropdown-button">
+                    <img src="./src/icons/arrow-dropdown.svg" alt="Dropdown arrow">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">FAQ</a>
+                    <a href="#">Customer Service</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </li>
+            <li class="menu-item">
+                <a href="#">Legal</a>
+                <button class="dropdown-button">
+                    <img src="./src/icons/arrow-dropdown.svg" alt="Dropdown arrow">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+
+      <div class="review-container">
+        <p>Trustpilot Reviewrs</p>
+        <div class="stars-container">
+          <img src="./src/icons/star.svg" alt="">
+          <img src="./src/icons/star.svg" alt="">
+          <img src="./src/icons/star.svg" alt="">
+          <img src="./src/icons/star.svg" alt="">
+          <img src="./src/icons/star.svg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rights">
+      <p>2017 - 2020 Chicksgold.com All Rights Reserved</p>
+    </div>
+  
+
+  </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
